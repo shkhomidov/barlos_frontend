@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   BarChartBigIcon,
@@ -40,7 +39,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import logo from "@/osmedeus-logo.png";
+import { OsmedeusLogo } from "@/components/osmedeus-logo";
 
 const navigationGroups = [
   {
@@ -154,18 +153,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton size="lg" asChild>
               <Link href="/">
                 <div className="flex aspect-square size-8 items-center justify-center">
-                  <Image
-                    src={logo}
-                    alt="Osmedeus"
-                    width={32}
-                    height={32}
-                    className="size-8 logo-shadow"
-                    priority
-                  />
+                  <OsmedeusLogo size={32} aria-label="Barlos" className="size-8 logo-shadow" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none group-data-[collapsible=icon]:hidden">
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold">Osmedeus</span>
+                    <span className="font-semibold">Barlos</span>
                     {isDemoMode() && (
                       <Badge variant="warning" className="text-[10px] px-1.5 py-0">
                         Demo

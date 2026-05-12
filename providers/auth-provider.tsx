@@ -138,7 +138,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             id: "user",
             username: "osmedeus",
             email: "osmedeus@osmedeus.org",
-            name: "Osmedeus",
+            name: "Barlos",
           });
           return;
         }

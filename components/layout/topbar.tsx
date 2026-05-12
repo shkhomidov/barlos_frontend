@@ -179,34 +179,6 @@ export function Topbar() {
         </Tooltip>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant="outline" size="icon" className="size-9 rounded-md" aria-label="Open documentation" asChild>
-              <a
-                href="https://docs.osmedeus.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <BookOpenIcon className="size-4" />
-              </a>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>Documentation</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button variant="outline" size="icon" className="size-9 rounded-md" aria-label="Open GitHub repository" asChild>
-              <a
-                href="https://github.com/j3ssie/osmedeus"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GithubIcon className="size-4" />
-              </a>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>GitHub</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
             <ThemeToggle variant="outline" className="rounded-md" />
           </TooltipTrigger>
           <TooltipContent>Theme</TooltipContent>

@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboardIcon,
@@ -27,7 +26,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import logo from "@/osmedeus-logo.png";
+import { OsmedeusLogo } from "@/components/osmedeus-logo";
 
 const navigation = [
   {
@@ -107,7 +106,7 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
             </div>
             <Link href="/" onClick={() => onOpenChange(false)} aria-label="Go home">
               <Button variant="ghost" size="sm" className="gap-2">
-                <Image src={logo} alt="Osmedeus" className="hidden md:block h-8 w-auto rotate-0 scale-x-100" priority />
+                <OsmedeusLogo size={32} aria-label="Barlos" className="hidden md:block h-8 w-auto" />
               </Button>
             </Link>
           </SheetTitle>

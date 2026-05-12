@@ -91,5 +91,5 @@ export function getRouteMeta(pathname: string): RouteMeta {
       description: "Browse and manage assets in the selected workspace",
     };
   }
-  return map[path] ?? { title: "Osmedeus Dashboard" };
+  return map[path] ?? { title: "Barlos Dashboard" };
 }

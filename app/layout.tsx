@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import favicon from "@/favicon.ico";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ColorVarsProvider } from "@/providers/color-vars-provider";
 import { AuthProvider } from "@/providers/auth-provider";
@@ -7,11 +6,8 @@ import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Osmedeus Dashboard",
-  description: "Security scan management dashboard for Osmedeus Workflow Engine",
-  icons: {
-    icon: favicon.src,
-  },
+  title: "Barlos Dashboard",
+  description: "Security scan management dashboard for Barlos Workflow Engine",
 };
 
 export default function RootLayout({
